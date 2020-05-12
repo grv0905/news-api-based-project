@@ -4,7 +4,7 @@
 	let newsAccordion=document.getElementById('newsaccordion');
 	//Creating get request
 	const xhr=new XMLHttpRequest();
-	xhr.open('GET','http://newsapi.org/v2/top-headlines?country=in&apikey=4d30488866f942d4af6e8cbaf1882f19',true);
+	xhr.open('GET','https://newsapi.org/v2/top-headlines?country=in&apikey=4d30488866f942d4af6e8cbaf1882f19',true);
 	xhr.onload=function(){
 		if(this.status==200){
 			let json=JSON.parse(this.responseText);
